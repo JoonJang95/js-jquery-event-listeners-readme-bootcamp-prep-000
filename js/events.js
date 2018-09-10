@@ -1,7 +1,21 @@
-//define functions here
+function getIt() {
+  $('p').on('click', function(e) {
+    alert('hey!');
+    return;
+  })
+}
 
-$(document).ready(function(){
+function frameIt() {
+  $('img').on('load', function(e) {
+    
+  })
+}
 
-// call functions here
-
-});
+function pressIt() {
+  $('form').on('keydown', function(e) {
+    if (e.key === "G") {
+           alert('G was pressed')
+           return;
+    }
+  })
+}
